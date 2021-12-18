@@ -1,0 +1,86 @@
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: url(./bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.main-content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.main-content h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 2px 2px 3px #000;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.534);
+}
+
+.coundown{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    user-select: none;
+}
+
+.coundown .wrapper{
+    flex-basis: 24%;
+    background: rgba(7, 8, 51, 0.432);
+    padding: 40px 0px 0px 0px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.coundown .wrapper div{
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.coundown .wrapper span{
+    padding: 15px 0px;
+    background: rgba(4, 121, 255, 0.897);
+    display: block;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+    .main-content h2{
+        font-size: 28px;
+        
+    }
+
+    .coundown .wrapper{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    .coundown .wrapper:last-child{
+        margin-bottom: 0px;
+    }
+}
+
